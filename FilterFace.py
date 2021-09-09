@@ -7,13 +7,14 @@ solo=0
 group=0
 obj=0
 
-haar_cascade= cv.CascadeClassifier('C:\\Users\\soham\\Documents\\CODING\\opencv\\Faces\\haar_face.xml');
+haar_cascade= cv.CascadeClassifier('.\haar_face.xml');
 for filename in os.listdir(dir):
     if filename.endswith(".jpg"): 
         pathname=os.path.join(dir,filename);
         img=cv.imread(pathname);
         gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY);
         faces=haar_cascade.detectMultiScale(gray,1.3,5);
+        #uncomment lines 18-19 to draw on the faces detected, add cv.imshow as needed
         # for (x,y,w,h) in faces:
         #     cv.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2);
         if(len(faces)==0):
@@ -22,10 +23,12 @@ for filename in os.listdir(dir):
             solo+=1;
         else:
             group+=1;
-            #  print(os.path.join(dir, filename))
     else:
         continue
 print(f'Pictures read :{solo+group+obj}');
 print(f'Solo pictures :{solo}');
 print(f'Group pictures :{group}');
 print(f'Abstract pictures :{obj}');
+
+
+cv.waitKey(0)
