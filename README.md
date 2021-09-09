@@ -1,9 +1,9 @@
 
-# GalleryFilters
+# GalleryAI
 Directory with several python scripts to filter out and count the images from a given directory, on the basis of some provided criterion.
 
-
-
+# Tech Used
+I have used OpenCV's haar cascade object classifiers to detect front_faces in the image-set. (Pretty Basic)
 ## Appendix
 
 ### FaceCounts
@@ -13,8 +13,6 @@ It keeps seperate count for potraits and group pictures and displays the count t
 
   
 ## Documentation
-
-[Documentation](https://linktodocumentation)
 
 To use to script,
 Clone the repo using
@@ -43,9 +41,8 @@ Open the terminal inside the current directory and run the command :
 
 #### python filterFace.py
 
-The program stats will be displayed after the scanning process is completed.
-![demo](https://drive.google.com/file/d/1TLXnMc54ohuBstpluuDYMYqQh9S3C5JD/view?usp=sharing)
-
+The program stats will be displayed after the scanning process is completed. <br /><br />
+![demo](https://drive.google.com/uc?export=view&id=1TLXnMc54ohuBstpluuDYMYqQh9S3C5JD)
 ### Example:
 
 #### Correct :
