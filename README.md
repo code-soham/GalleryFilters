@@ -32,7 +32,7 @@ cv2 , using:
 pip install opencv-contrib-python
 
 ### Libraries Used :
-os : for path manipulation (pre-installed with Python)
+os : for path manipulation (pre-installed with Python) \
 cv2 : OpenCV library used here for all image recognition features
   
 ### Setup :
@@ -44,6 +44,7 @@ Open the terminal inside the current directory and run the command :
 #### python filterFace.py
 
 The program stats will be displayed after the scanning process is completed.
+![demo](https://drive.google.com/file/d/1TLXnMc54ohuBstpluuDYMYqQh9S3C5JD/view?usp=sharing)
 
 ### Example:
 
